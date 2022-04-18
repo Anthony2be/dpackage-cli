@@ -26,5 +26,3 @@ jobs:
       with:
         # Artifact name
         name: dpackage
-        # Destination path
-        path: ./...
