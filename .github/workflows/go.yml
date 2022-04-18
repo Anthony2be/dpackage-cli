@@ -21,8 +21,8 @@ jobs:
     - name: Test
       run: go test -v ./...
       
-    - name: Download a Build Artifact
-      uses: actions/download-artifact@v3.0.0
+    - name: Upload artifacts
+      uses: "actions/upload-artifact@v2.2.3"
       with:
         # Artifact name
         name: dpackage
