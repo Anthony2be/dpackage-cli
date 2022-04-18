@@ -16,7 +16,7 @@ jobs:
         go-version: 1.18
 
     - name: Build
-      run: go build -o build/dpackage.exe -v ./...
+      run: go build -o build/dpackage.exe
 
     - name: Test
       run: go test -v ./...
