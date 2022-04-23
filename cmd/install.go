@@ -60,7 +60,7 @@ var installCmd = &cobra.Command{
 	Run: func(cmd *cobra.Command, args []string) {
 		fmt.Println("Download Started")
 
-		fileUrl := "https://github.com/MMK21Hub/Capitalisation-Fixes/releases/download/v2.4/Capitalisation-Fixes-v2.4.zip//args[0]" //"https://upload.wikimedia.org/wikipedia/commons/d/d6/Wp-w4-big.jpg"
+		fileUrl := "https://github.com/MMK21Hub/Capitalisation-Fixes/releases/download/v2.4/Capitalisation-Fixes-v2.4.zip" //"https://upload.wikimedia.org/wikipedia/commons/d/d6/Wp-w4-big.jpg"
 		err := DownloadFile(fmt.Sprintf("%s.zip", args[0]), fileUrl)
 		if err != nil {
 			panic(err)
